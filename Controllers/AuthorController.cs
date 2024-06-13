@@ -1,4 +1,5 @@
-﻿using Books.Api.Application.Response;
+﻿using Books.Api.Application.DTOs.AuthorDto;
+using Books.Api.Application.Response;
 using Books.Api.Core.Entities;
 using Books.Api.Core.Services.Interface;
 using Microsoft.AspNetCore.Http;
@@ -40,6 +41,30 @@ namespace Books.Api.Controllers
         public async Task<ActionResult<ResponseModel<Author>>> FindAuthorByIdBook(int idAutor)
         {
             var author = await _authorService.GetAuthorByIdBook(idAutor);
+            return Ok(author);
+        }
+        
+        [HttpPost("CreateAuthor")]
+        //ActionResult -> pode nos retornar um resultado 200 - 400 - 500 etc..
+        public async Task<ActionResult<ResponseModel<List<Author>>>> CreateAuthor(CreateAuthorDto createAuthorDto) //-> Passo o DTO aqui
+        {
+            var author = await _authorService.CreateAuthor(createAuthorDto);
+            return Ok(author);
+        }
+        
+        [HttpPut("EditAuthor")]
+        //ActionResult -> pode nos retornar um resultado 200 - 400 - 500 etc..
+        public async Task<ActionResult<ResponseModel<List<Author>>>> EditAuthor(EditAuthorDto editAuthorDto) //-> Passo o DTO aqui
+        {
+            var author = await _authorService.EditAuthor(editAuthorDto);
+            return Ok(author);
+        }
+        
+        [HttpDelete("RemoveAuthor")]
+        //ActionResult -> pode nos retornar um resultado 200 - 400 - 500 etc..
+        public async Task<ActionResult<ResponseModel<List<Author>>>> RemoveAuthor(int idAutor) 
+        {
+            var author = await _authorService.RemoveAuthor(idAutor);
             return Ok(author);
         }
     }

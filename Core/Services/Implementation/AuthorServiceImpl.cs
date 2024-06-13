@@ -1,4 +1,6 @@
-﻿using Books.Api.Application.Response;
+﻿
+using Books.Api.Application.DTOs.AuthorDto;
+using Books.Api.Application.Response;
 using Books.Api.Core.Entities;
 using Books.Api.Core.Services.Interface;
 using Books.Api.Infrastructure;
@@ -13,6 +15,72 @@ namespace Books.Api.Core.Services.Implementation
         public AuthorServiceImpl(ApplicationContext applicationContext)
         {
             _applicationContext = applicationContext;
+        }
+
+        public async Task<ResponseModel<List<Author>>> CreateAuthor(CreateAuthorDto createAuthorDto)
+        {
+            ResponseModel<List<Author>> response = new ResponseModel<List<Author>>();
+            try
+            {
+                //Aqui iremos utilizar um Dto, por isso precisamos criar um Author (model) antes
+                var author = new Author()
+                {
+                    //Assim eu passo as propriedades do DTO para a entidade para ir para o banco 
+                    //Isso que deixa o DTO atraente, nao preciso de tabela, nao preciso de migration, eu so preciso pegar o que a entidade tem e passar pra ela
+                    Name = createAuthorDto.Name,
+                    LastName = createAuthorDto.LastName,
+                };
+
+                _applicationContext.Add(author);
+                await _applicationContext.SaveChangesAsync();
+
+                response.Data = await _applicationContext.Author.ToListAsync(); //Retornaremos uma lista de author
+                response.Message = "Autor criado com sucesso!";
+
+                return response;
+
+            }
+            catch (Exception ex)
+            {
+                response.Message = ex.Message; //-> Esta no responseModel
+                response.Status = false; //-> Esta no responseModel (se der false e que deu erro)
+                return response;
+            }
+        }
+
+        public async Task<ResponseModel<List<Author>>> EditAuthor(EditAuthorDto editAuthorDto)
+        {
+            ResponseModel<List<Author>> response = new ResponseModel<List<Author>>();
+            try
+            {
+                var author = await _applicationContext.Author.FirstOrDefaultAsync(x => x.Id == editAuthorDto.Id); //Vou percorrer o banco e achar o id que esta sendo passado no parametro
+
+                if (author is null)
+                {
+                    response.Message = "Nenhum autor localizado";
+                    return response;
+                }
+
+                //Repare que aqui eu nao criei o objeto Author(model)
+                //Pois eu ja abri o banco ali em cima pra pegar o id
+                author.Name = editAuthorDto.Name;
+                author.LastName = editAuthorDto.LastName;
+
+                _applicationContext.Update(author);
+                await _applicationContext.SaveChangesAsync();
+
+                response.Data = await _applicationContext.Author.ToListAsync(); //Retornaremos uma lista de author atualizado
+                response.Message = "Autor editado com sucesso!";
+
+                return response;
+
+            }
+            catch (Exception ex)
+            {
+                response.Message = ex.Message; //-> Esta no responseModel
+                response.Status = false; //-> Esta no responseModel (se der false e que deu erro)
+                return response;
+            }
         }
 
         public async Task<ResponseModel<Author>> GetAuthorById(int idAuthor)
@@ -87,6 +155,35 @@ namespace Books.Api.Core.Services.Implementation
 
             }
             catch (Exception ex) {
+                response.Message = ex.Message; //-> Esta no responseModel
+                response.Status = false; //-> Esta no responseModel (se der false e que deu erro)
+                return response;
+            }
+        }
+
+        public async Task<ResponseModel<List<Author>>> RemoveAuthor(int idAuthor)
+        {
+            ResponseModel<List<Author>> response = new ResponseModel<List<Author>>();
+            try
+            {
+               var author = await _applicationContext.Author.FirstOrDefaultAsync(x => x.Id == idAuthor); //Vou percorrer o banco e achar o id que esta sendo passado no parametro
+
+               if(author is null)
+                {
+                    response.Message = "Nenhum autor localizado";
+                    return response;
+                }
+
+                _applicationContext.Remove(author);
+                await _applicationContext.SaveChangesAsync();
+
+                //atualizo a lista
+                response.Data = await _applicationContext.Author.ToListAsync();
+                response.Message = "Autor removido com sucesso";
+                return response;
+            }
+            catch (Exception ex)
+            {
                 response.Message = ex.Message; //-> Esta no responseModel
                 response.Status = false; //-> Esta no responseModel (se der false e que deu erro)
                 return response;

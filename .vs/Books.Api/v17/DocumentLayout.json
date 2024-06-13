@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|c:\\users\\user\\documents\\dotnet\\booksapi\\books.api\\core\\services\\implementation\\authorserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|solutionrelative:core\\services\\implementation\\authorserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|c:\\users\\user\\documents\\dotnet\\booksapi\\books.api\\application\\dtos\\book\\editbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|solutionrelative:application\\dtos\\book\\editbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|c:\\users\\user\\documents\\dotnet\\booksapi\\books.api\\application\\dtos\\book\\createbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|solutionrelative:application\\dtos\\book\\createbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|c:\\users\\user\\documents\\dotnet\\booksapi\\books.api\\application\\dtos\\links\\authorlinkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|solutionrelative:application\\dtos\\links\\authorlinkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|c:\\users\\user\\documents\\dotnet\\booksapi\\books.api\\core\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|solutionrelative:core\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|c:\\users\\user\\documents\\dotnet\\booksapi\\books.api\\core\\services\\implementation\\bookserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|solutionrelative:core\\services\\implementation\\bookserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|c:\\users\\user\\documents\\dotnet\\booksapi\\books.api\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|c:\\users\\user\\documents\\dotnet\\booksapi\\books.api\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|solutionrelative:controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|c:\\users\\user\\documents\\dotnet\\booksapi\\books.api\\core\\services\\interface\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|solutionrelative:core\\services\\interface\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|c:\\users\\user\\documents\\dotnet\\booksapi\\books.api\\core\\services\\interface\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F785C64B-875D-4DB9-BC81-D54EA0143E27}|Books.Api.csproj|solutionrelative:core\\services\\interface\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +55,119 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthorServiceImpl.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Core\\Services\\Implementation\\AuthorServiceImpl.cs",
-              "RelativeDocumentMoniker": "Core\\Services\\Implementation\\AuthorServiceImpl.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Core\\Services\\Implementation\\AuthorServiceImpl.cs",
-              "RelativeToolTip": "Core\\Services\\Implementation\\AuthorServiceImpl.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACwAAABCAAAA",
+              "Title": "EditBookDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Application\\DTOs\\Book\\EditBookDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Book\\EditBookDto.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Application\\DTOs\\Book\\EditBookDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Book\\EditBookDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T15:31:29.978Z",
+              "WhenOpened": "2024-06-13T01:58:39.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CreateBookDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Application\\DTOs\\Book\\CreateBookDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Book\\CreateBookDto.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Application\\DTOs\\Book\\CreateBookDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Book\\CreateBookDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T01:56:50.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Core\\Entities\\Author.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Author.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Core\\Entities\\Author.cs",
+              "RelativeToolTip": "Core\\Entities\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T01:56:33.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthorLinkDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Application\\DTOs\\Links\\AuthorLinkDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Links\\AuthorLinkDto.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Application\\DTOs\\Links\\AuthorLinkDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Links\\AuthorLinkDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T01:56:11.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Core\\Services\\Interface\\IAuthorService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\Interface\\IAuthorService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Core\\Services\\Interface\\IAuthorService.cs",
+              "RelativeToolTip": "Core\\Services\\Interface\\IAuthorService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T01:45:12.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Controllers\\BookController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAIwD8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T01:43:15.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AuthorController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Controllers\\AuthorController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthorController.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Controllers\\AuthorController.cs",
               "RelativeToolTip": "Controllers\\AuthorController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwB4AAABOAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwEQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T15:28:32.852Z"
+              "WhenOpened": "2024-06-13T01:43:05.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Core\\Services\\Interface\\IBookService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\Interface\\IBookService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Core\\Services\\Interface\\IBookService.cs",
+              "RelativeToolTip": "Core\\Services\\Interface\\IBookService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T01:28:18.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookServiceImpl.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Core\\Services\\Implementation\\BookServiceImpl.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\Implementation\\BookServiceImpl.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dotnet\\BooksApi\\Books.Api\\Core\\Services\\Implementation\\BookServiceImpl.cs",
+              "RelativeToolTip": "Core\\Services\\Implementation\\BookServiceImpl.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwG8AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T01:17:11.565Z",
+              "EditorCaption": ""
             }
           ]
         }

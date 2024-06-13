@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 
 //Injecao de dependencia
 builder.Services.AddScoped<IAuthorService, AuthorServiceImpl>();
+builder.Services.AddScoped<IBookService, BookServiceImpl>();
 
 //Conexao com o banco
 builder.Services.AddSqlServer<ApplicationContext>(builder.Configuration["ConnectionStrings:StoreBookCs"]);
